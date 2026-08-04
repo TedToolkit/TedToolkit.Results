@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\externals\TedToolkit\props\CodeAnalysis.props" />
+  <Import Project="..\..\externals\TedToolkit\props\NugetPackage.props" />
+  <Import Project="..\..\externals\TedToolkit\props\AlmostAllFrameworks.props" />
+
+  <PropertyGroup>
+    <Title>TedToolkit.Results.Composition</Title>
+    <Description>Optional Task and collection composition extensions for TedToolkit Results.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TedToolkit.Results\TedToolkit.Results.csproj" />
+  </ItemGroup>
+
+</Project>

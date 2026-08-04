@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\externals\TedToolkit\props\CodeAnalysis.props" />
+  <Import Project="..\..\externals\TedToolkit\props\NugetPackage.props" />
+  <Import Project="..\..\externals\TedToolkit\props\AlmostAllFrameworks.props" />
+
+  <PropertyGroup>
+    <Title>TedToolkit.Results</Title>
+    <Description>Result types for representing explicit success and failure outcomes in .NET APIs.</Description>
+  </PropertyGroup>
+
+</Project>

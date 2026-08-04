@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\externals\TedToolkit\props\CodeAnalysis.props" />
+  <Import Project="..\..\externals\TedToolkit\props\NugetPackage.props" />
+  <Import Project="..\..\externals\TedToolkit\props\AlmostAllFrameworks.props" />
+
+  <PropertyGroup>
+    <Title>TedToolkit.Results.SystemTextJson</Title>
+    <Description>System.Text.Json converters for TedToolkit Results.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json"
+                      Condition="'$(TargetFramework)' != 'net6.0' and '$(TargetFramework)' != 'net7.0'" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TedToolkit.Results\TedToolkit.Results.csproj" />
+  </ItemGroup>
+
+</Project>

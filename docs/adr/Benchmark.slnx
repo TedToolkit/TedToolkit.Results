@@ -1,0 +1,5 @@
+<Solution>
+  <Folder Name="/ADR benchmarks/">
+    <Project Path="ADR-0001-result-value-representation/benchmark/TedToolkit.Results.Representation.Benchmarks.csproj" />
+  </Folder>
+</Solution>
