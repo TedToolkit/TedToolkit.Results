@@ -18,9 +18,4 @@
     <ProjectReference Include="..\TedToolkit.Results\TedToolkit.Results.csproj" />
   </ItemGroup>
 
-
-  <ItemGroup>
-    <None Include="../../.agents/skills/serialize-typed-results/**/*"
-          Pack="true" PackagePath="skills/serialize-typed-results/" />
-  </ItemGroup>
 </Project>

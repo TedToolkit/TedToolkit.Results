@@ -13,9 +13,4 @@
     <ProjectReference Include="..\TedToolkit.Results\TedToolkit.Results.csproj" />
   </ItemGroup>
 
-
-  <ItemGroup>
-    <None Include="../../.agents/skills/compose-typed-results/**/*"
-          Pack="true" PackagePath="skills/compose-typed-results/" />
-  </ItemGroup>
 </Project>
