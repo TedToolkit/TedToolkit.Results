@@ -17,4 +17,9 @@
     <ProjectReference Include="..\TedToolkit.Results\TedToolkit.Results.csproj" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <None Include="../../.agents/skills/map-results-to-http/**/*"
+          Pack="true" PackagePath="skills/map-results-to-http/" />
+  </ItemGroup>
 </Project>

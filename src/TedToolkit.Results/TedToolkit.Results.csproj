@@ -9,4 +9,9 @@
     <Description>Result types for representing explicit success and failure outcomes in .NET APIs.</Description>
   </PropertyGroup>
 
+
+  <ItemGroup>
+    <None Include="../../.agents/skills/model-typed-results/**/*"
+          Pack="true" PackagePath="skills/model-typed-results/" />
+  </ItemGroup>
 </Project>
