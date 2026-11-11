@@ -76,12 +76,13 @@ The core, Composition, and System.Text.Json packages target:
 - `net8.0`
 - `net9.0`
 - `net10.0`
+- `net11.0`
 - `net472`
 - `net48`
 - `netstandard2.0`
 - `netstandard2.1`
 
-The ASP.NET Core package targets `net8.0` and `net10.0`.
+The ASP.NET Core package targets `net8.0`, `net10.0`, and `net11.0`.
 
 ## License
 

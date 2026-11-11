@@ -5,6 +5,7 @@
   <Import Project="AlmostAllFrameworks.props" Sdk="TedToolkit.Build.Sdk" />
 
   <PropertyGroup>
+    <TargetFrameworks>$(TargetFrameworks);net11.0</TargetFrameworks>
     <Title>TedToolkit.Results</Title>
     <Description>Result types for representing explicit success and failure outcomes in .NET APIs.</Description>
   </PropertyGroup>

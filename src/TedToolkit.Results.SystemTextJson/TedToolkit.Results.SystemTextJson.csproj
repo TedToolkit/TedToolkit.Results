@@ -5,6 +5,7 @@
   <Import Project="AlmostAllFrameworks.props" Sdk="TedToolkit.Build.Sdk" />
 
   <PropertyGroup>
+    <TargetFrameworks>$(TargetFrameworks);net11.0</TargetFrameworks>
     <Title>TedToolkit.Results.SystemTextJson</Title>
     <Description>System.Text.Json converters for TedToolkit Results.</Description>
   </PropertyGroup>
