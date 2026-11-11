@@ -41,6 +41,7 @@ an endpoint requires a different success response such as Created or Accepted.
 
 - `net8.0`
 - `net10.0`
+- `net11.0`
 
 ## Agent skill
 
