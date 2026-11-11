@@ -30,33 +30,22 @@ tests/
   TedToolkit.Results.Composition.Tests/
   TedToolkit.Results.SystemTextJson.Tests/
   TedToolkit.Results.AspNetCore.Tests/
-Build/
-  Build.csproj
-externals/
-  TedToolkit/
 ```
 
 - Each directory under `src` is an independently consumable NuGet package boundary.
 - Each matching project under `tests` contains fast, deterministic tests for that package.
-- `Build` contains the repository pipeline entry point.
-- `externals/TedToolkit` is a submodule that provides shared props and build infrastructure.
+- `global.json` pins the TedToolkit MSBuild SDK. `NuGet.Config` identifies its package source.
 
 ## Prerequisites
 
 - .NET 10 SDK
-- Git with submodule support
+- Git
 
-Clone with submodules:
+Clone the repository:
 
 ```shell
-git clone --recursive https://github.com/TedToolkit/TedToolkit.Results.git
+git clone https://github.com/TedToolkit/TedToolkit.Results.git
 cd TedToolkit.Results
-```
-
-If the repository is already cloned without submodules:
-
-```shell
-git submodule update --init --recursive
 ```
 
 ## Build And Test
