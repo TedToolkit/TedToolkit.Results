@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <Import Project="..\..\externals\TedToolkit\props\CodeAnalysis.props" />
-  <Import Project="..\..\externals\TedToolkit\props\NugetPackage.props" />
+  <Import Project="CodeAnalysis.props" Sdk="TedToolkit.Build.Sdk" />
+  <Import Project="NugetPackage.props" Sdk="TedToolkit.Build.Sdk" />
 
   <PropertyGroup>
     <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
