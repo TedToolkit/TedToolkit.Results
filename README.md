@@ -30,33 +30,22 @@ tests/
   TedToolkit.Results.Composition.Tests/
   TedToolkit.Results.SystemTextJson.Tests/
   TedToolkit.Results.AspNetCore.Tests/
-Build/
-  Build.csproj
-externals/
-  TedToolkit/
 ```
 
 - Each directory under `src` is an independently consumable NuGet package boundary.
 - Each matching project under `tests` contains fast, deterministic tests for that package.
-- `Build` contains the repository pipeline entry point.
-- `externals/TedToolkit` is a submodule that provides shared props and build infrastructure.
+- `global.json` pins the TedToolkit MSBuild SDK. `NuGet.Config` identifies its package source.
 
 ## Prerequisites
 
-- .NET 11 SDK
-- Git with submodule support
+- .NET 10 SDK
+- Git
 
-Clone with submodules:
+Clone the repository:
 
 ```shell
-git clone --recursive https://github.com/TedToolkit/TedToolkit.Results.git
+git clone https://github.com/TedToolkit/TedToolkit.Results.git
 cd TedToolkit.Results
-```
-
-If the repository is already cloned without submodules:
-
-```shell
-git submodule update --init --recursive
 ```
 
 ## Build And Test
@@ -76,11 +65,7 @@ dotnet run --project tests/TedToolkit.Results.SystemTextJson.Tests/TedToolkit.Re
 dotnet run --project tests/TedToolkit.Results.AspNetCore.Tests/TedToolkit.Results.AspNetCore.Tests.csproj -c Release
 ```
 
-Run the repository pipeline:
-
-```shell
-dotnet run --project Build/Build.csproj
-```
+GitHub Actions runs the shared TedToolkit build workflow. Set `BUILD_SOLUTION` to `TedToolkit.Results.slnx`, `BUILD_TEST_PROJECTS` to the four test project paths above, and `BUILD_PACK_PROJECTS` to the four package projects under `src/`. List one test or package project per line.
 
 ## Target Frameworks
 
