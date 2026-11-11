@@ -76,7 +76,7 @@ dotnet run --project tests/TedToolkit.Results.SystemTextJson.Tests/TedToolkit.Re
 dotnet run --project tests/TedToolkit.Results.AspNetCore.Tests/TedToolkit.Results.AspNetCore.Tests.csproj -c Release
 ```
 
-GitHub Actions runs the shared TedToolkit build workflow. Set `BUILD_SOLUTION` to `TedToolkit.Results.slnx` and set `BUILD_TEST_PROJECTS` to the four project paths above, one path per line.
+GitHub Actions runs the shared TedToolkit build workflow. Set `BUILD_SOLUTION` to `TedToolkit.Results.slnx`, `BUILD_TEST_PROJECTS` to the four test project paths above, and `BUILD_PACK_PROJECTS` to the four package projects under `src/`. List one test or package project per line.
 
 ## Target Frameworks
 
