@@ -49,6 +49,10 @@ conversion settings can change stored JSON.
 The package uses the platform-provided System.Text.Json reference on `net6.0` and `net7.0`. Other
 targets use the centrally managed System.Text.Json package version.
 
+## Agent skill
+
+The `model-typed-results` skill ships in `TedToolkit.Results`, which this package restores as a dependency. If your project references only this package, get the resolved `TedToolkit.Results` version from `dotnet package list --include-transitive` and import the skill with `dotnet-package-skills install --package TedToolkit.Results@<resolved-version>`.
+
 ## License
 
 Licensed under LGPL-3.0.

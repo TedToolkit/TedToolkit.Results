@@ -42,6 +42,10 @@ an endpoint requires a different success response such as Created or Accepted.
 - `net8.0`
 - `net10.0`
 
+## Agent skill
+
+The `model-typed-results` skill ships in `TedToolkit.Results`, which this package restores as a dependency. If your project references only this package, get the resolved `TedToolkit.Results` version from `dotnet package list --include-transitive` and import the skill with `dotnet-package-skills install --package TedToolkit.Results@<resolved-version>`.
+
 ## License
 
 Licensed under LGPL-3.0.
